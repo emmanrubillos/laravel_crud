@@ -5,12 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class diary extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'detail',
+        'title',
+        'body',
+        'img'
+    ];
+
+    protected $attributes = [
+        'img' => 'Screenshot_1.png'
     ];
 }
